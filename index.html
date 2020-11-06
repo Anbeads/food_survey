@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Survey form</title>
+    </head>
+    <body>
+<div class="main">
+    <header>
+        <h1 id="title">Favourite meal survey form</h1>
+        <p id="description">The survey is there to find out favorite flavores</p>
+    </header>
+        <form id="survey-form" action="i dont know">
+            <div class="chosing form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label id="number-label" for="number">Age (optional)</label>
+            <input type="number" id="number" name="age" placeholder="Age"  min="1" max="99"> 
+        
+            <label for="dropdown"> Which side dish you like the most?</label>
+             <select id="dropdown" name="dropdown">
+                 <option value="potatoes">Potatoes</option>
+                 <option value="fries">Fries</option>
+                 <option value="rice">Rice</option>
+                 <option value="pasta">Pasta</option>
+             </select>
+            </div>
+            <p>Please select number of courses you like for lunch.</p>
+             <div class="radiobuttons form-group"> 
+                <label for="radio1">
+                 <input type="radio" id="radio1" name="mealsnumber" value="1" class="input-radio" checked>
+                 1</label>
+                 
+                 <label for="radio2">
+                 <input type="radio" id="radio2" name="mealsnumber" value="2" class="input-radio">
+                 2</label>
+
+                 <label for="radio3">
+                 <input type="radio" id="radio3" name="mealsnumber" value="3" class="input-radio">
+                 3</label>
+                 
+                 <label for="radio4">
+                 <input type="radio" id="radio4" name="mealsnumber" value="4" class="input-radio">
+                 4</label>
+                 
+                 <label for="radio5">
+                 <input type="radio" id="radio5" name="mealsnumber" value="5" class="input-radio">
+                 5 and more</label>
+             </div>
+             <p>Choose your favourite spices</p>
+             <div class="checkboxes form-group">
+                <label for="chilly">
+                 <input type="checkbox" id="chilly" name="chilly" value="spices" class="input-check">
+                 Chilly</label>
+
+                 <label for="garlic">
+                 <input type="checkbox" id="garlic" name="garlic" value="spices" class="input-check">
+                Garlic</label>
+
+                <label for="basil">
+                 <input type="checkbox" id="basil" name="basil" value="spices" class="input-check">
+                Basil</label>
+             </div>
+
+             <div class="comment form-group"> 
+             <label for="comment">Write your comment here</label>
+             <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <input type="submit" id="submit" value="Send form" class="subbutton">
+        </form>
+    </div>
+
+
+        
+    </body>
+</html>
